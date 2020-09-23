@@ -1,6 +1,6 @@
-package VP.amok;
+package VP.amokTest;
 
-import org.junit.jupiter.api.Test;
+import VP_amok.LiveVP;
 
 import static org.junit.jupiter.api.Assertions.assertNotNull;
 

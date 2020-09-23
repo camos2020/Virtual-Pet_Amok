@@ -1,4 +1,4 @@
-package VP.amok;
+package VP_amok;
 
 public class ShelterWorker {
     public String getEmpName;

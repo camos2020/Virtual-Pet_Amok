@@ -1,5 +1,6 @@
-package VP.amok;
+package VP.amokTest;
 
+import VP_amok.RoboticVP;
 import org.assertj.core.internal.bytebuddy.matcher.ElementMatcher;
 import org.junit.jupiter.api.Test;
 
@@ -17,7 +18,8 @@ public class RoboticVPTest {
     public void oilLevelShouldIncrease() {
         RoboticVP roboticVP = new RoboticVP();
         int oilLevelBefore = roboticVP.getOilLevel1();
-        underTest.fillOil(roboticVP);
+        underTest.getOilLevel1(roboticVP);
+        //fillOil(roboticVP);
         int oilLevelAfter = roboticVP.getOilLevel1();
         assertThat(oilLevelBefore - oilLevelAfter, is(60));
 
@@ -26,13 +28,9 @@ public class RoboticVPTest {
     private void assertThat(int i, ElementMatcher.Junction<Object> objectJunction) {
     }
 
-    @Test
-    public void shouldSayShelterWorkername() {
-        ShelterWorker underTest = new ShelterWorker();
-        underTest.getEmpName("Shelly");
-        assertEquals("Shelly", underTest.getEmpName);
-    }
+
 }
+
 
 
 

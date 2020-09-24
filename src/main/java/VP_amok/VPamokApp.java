@@ -5,7 +5,5 @@ public class VPamokApp {
 
         System.out.println("VP Amok App");
     }
+}
 
-//    public String getGreeting() {
-//        return "Hello world.";
-    }

@@ -1,5 +1,5 @@
 package VP_amok;
-public class RoboticVP {
+public class RoboticDog {
 
     private static final int DEFAULT_OIL_LEVEL = 50;
     private int oilLevel = DEFAULT_OIL_LEVEL;
@@ -13,10 +13,10 @@ public class RoboticVP {
         oilLevel -= amount;
     }
 
-    public void fillOil(RoboticVP roboticVP) {
+    public void fillOil(RoboticDog roboticDog) {
     }
 
-    public int getOilLevel1(RoboticVP roboticVP) {
+    public int getOilLevel1(RoboticDog roboticDog) {
         return oilLevel;
     }
 }

@@ -3,29 +3,27 @@ package VP_amok;
 public class OrganicCat extends OrganicPet {
 
     private int litterBoxLevel;
-    private int needsPettingLevel;
+    private int needsToBePettedLevel;
 
     public int getLitterBox() {
         return litterBoxLevel;
     }
-    public int getNeedsPetting() {
-        return needsPettingLevel;
+    public int getNeedsToBePetted() {
+        return needsToBePettedLevel;
     }
 
       //Constructor- any changes to characteristics have to be done here.
-    public OrganicCat(String name, String description, int hungerLevel, int thirstLevel, int boredomLevel, int wellnessLevel, int litterBoxLevel, int needsPettingLevel) {
+    public OrganicCat(String name, String description, int hungerLevel, int thirstLevel, int boredomLevel, int wellnessLevel, int litterBoxLevel, int needsToBePettedLevel) {
         super(name, description, hungerLevel, thirstLevel, boredomLevel, wellnessLevel);
         this.litterBoxLevel = litterBoxLevel;
-        this.needsPettingLevel = needsPettingLevel;
+        this.needsToBePettedLevel = needsToBePettedLevel;
     }
 
-    public void cleanLitterBox() {
-        litterBoxLevel +=20;
+    public void emptyLitterBox() {
+        litterBoxLevel -=20;
         }
-
     public void catPetting() {
-        needsPettingLevel -=20;
+        needsToBePettedLevel -=20;
     }
-
 
 }

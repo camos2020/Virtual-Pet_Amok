@@ -15,6 +15,5 @@ public class RoboticCat extends RoboticPet{
         this.boredomLevel = boredomLevel;
         this.oilLevel = oilLevel;
         this.maintenanceLevel = maintenanceLevel;
-
     }
 }

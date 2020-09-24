@@ -25,11 +25,10 @@ public abstract class RoboticPet {
     public int getMaintenance() { return maintenanceLevel;}
 
     public void fixPet() {
-        maintenanceLevel -= 20;
+        maintenanceLevel += 20;
     }
-    public void PlayWithPet() {boredomLevel -= 20;}
-    public void oilPet() {
+    public void playWithPetByRemote() {boredomLevel -= 20;}
+    public void fillOil() {
         oilLevel += 20;
     }
-
 }

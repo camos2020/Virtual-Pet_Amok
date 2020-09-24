@@ -36,7 +36,7 @@ public class OrganicCatTest {
     }
     @Test
     public  void  shouldIncreaseWellnessBy20WhenVisitsVet() {
-        underTest.vetVisit();
+        underTest.takePetToVet();
         int currentWellness = underTest.getWellness();
         assertEquals(currentWellness, 40);
     }

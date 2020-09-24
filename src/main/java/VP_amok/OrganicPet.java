@@ -28,8 +28,6 @@ public abstract class OrganicPet {
     public void PlayWithPet() {boredomLevel -= 20;}
     public void waterPet() { thirstLevel -= 20;}
     public void takePetToVet() { wellnessLevel +=20;}
-
-
 }
 
 //public void feedPet();  ** Use this method to leave this Method open for @Override

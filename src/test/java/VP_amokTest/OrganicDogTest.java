@@ -2,7 +2,6 @@ package VP_amokTest;
 
 import VP_amok.OrganicDog;
 import org.junit.jupiter.api.Test;
-
 import static org.junit.Assert.assertEquals;
 
 public class OrganicDogTest {

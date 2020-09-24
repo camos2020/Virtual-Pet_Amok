@@ -32,13 +32,13 @@ public class OrganicDogTest {
     public  void  shouldIncreaseCageCleanlinessBy20WhenCageCleaned() {
         OrganicDog underTest = new OrganicDog("Taz", "Hyper", 100, 100, 100, 20, 20, 100);
         underTest.cleanCage();
-        int currentCageClean = underTest.getcageClean();
+        int currentCageClean = underTest.getCageClean();
         assertEquals(currentCageClean, 40);
     }
     @Test
     public  void  shouldIncreaseWellnessBy20WhenVisitsVet() {
         OrganicDog underTest = new OrganicDog("Taz", "Hyper", 100, 100, 100, 20, 20, 100 );
-        underTest.vetVisit();
+        underTest.takePetToVet();
         int currentWellness = underTest.getWellness();
         assertEquals(currentWellness, 40);
     }

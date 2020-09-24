@@ -7,8 +7,7 @@ import static org.junit.Assert.assertEquals;
 
 public class OrganicCatTest {
 
-    OrganicCat underTest = new OrganicCat("Kitty", "Relaxed", 100, 100, 100, 20, 20,100);
-
+    OrganicCat underTest = new OrganicCat("Kitty", "Relaxed", 100, 100, 100, 20, 20,120);
 
     @Test
     public  void  shouldDecreaseHungerBy20WhenFed()  {
@@ -45,7 +44,7 @@ public class OrganicCatTest {
     public  void  shouldIncreaseHappyPurBy20WhenCatGetsPetted() {
         underTest.catPetting();
         int currentNeedsPetting = underTest.getNeedsPetting();
-        assertEquals(currentNeedsPetting, 80);
+        assertEquals(currentNeedsPetting, 100);
     }
 
 }

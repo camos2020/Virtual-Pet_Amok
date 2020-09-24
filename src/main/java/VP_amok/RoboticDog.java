@@ -1,4 +1,5 @@
 package VP_amok;
+
 public class RoboticDog {
 
     private static final int DEFAULT_OIL_LEVEL = 50;

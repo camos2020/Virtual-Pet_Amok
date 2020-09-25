@@ -9,6 +9,10 @@ public abstract class VirtualPet {
         this.description = description;
     }
 
+    public VirtualPet() {
+
+    }
+
     public String getName() {
         return petName;
     }

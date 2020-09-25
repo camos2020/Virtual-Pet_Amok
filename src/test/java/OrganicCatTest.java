@@ -1,10 +1,13 @@
+import Shelter.OrganicCat;
+import Shelter.OrganicDog;
+import Shelter.OrganicPet;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.Assert.assertEquals;
 
 public class OrganicCatTest {
 
-    OrganicPet underTest = new VP_amok.OrganicPet("Kitty", "Relaxed", 100, 100, 100, 20, 100,100, 20);
+    OrganicPet underTest = new OrganicCat("Taz", "Hyper", 100, 100, 100, 20, 100, 100, 20);
 
     @Test
     public  void  shouldDecreaseHungerBy20WhenFed()  {
@@ -46,13 +49,12 @@ public class OrganicCatTest {
         int currentNeedsToBePetted = underTest.getNeedsToBePetted();
         assertEquals(currentNeedsToBePetted, 80);
     }
-
     @Test
     public  void  shouldIncreaseHappinessBy20WithPositiveInteraction() {
-        OrganicPet underTest = new OrganicDog("Taz", "Hyper", 100, 100, 100, 20, 20, 20, 20);
+        OrganicPet underTest = new OrganicCat("Taz", "Hyper", 100, 100, 100, 20, 20, 20, 20);
         underTest.makePetHappy();
         int currentHappiness = underTest.getHappiness();
         assertEquals(currentHappiness, 40);
     }
-
 }
+

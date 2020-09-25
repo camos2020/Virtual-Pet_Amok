@@ -1,3 +1,5 @@
+package Shelter;
+
 import Shelter.OrganicDog;
 import Shelter.OrganicPet;
 import org.junit.jupiter.api.Test;

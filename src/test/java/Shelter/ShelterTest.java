@@ -14,7 +14,7 @@ public class ShelterTest {
     OrganicCat organicCat  = new OrganicCat("Kitty", "Hyper", 100, 100, 100, 20, 100, 100, 20);
 
 @Test
-    public void shouldBeAbletoAddRoboDogName(){
+public void shouldBeAbletoAddRoboDogName(){
     underTest.add(roboticDog);
     VirtualPet foundRoboDog = underTest.findRoboticPet("RoboTaz");
     assertEquals("RoboTaz", foundRoboDog.getPetName());

@@ -1,3 +1,5 @@
+package Shelter;
+
 import Shelter.RoboticCat;
 import Shelter.Shelter;
 import org.junit.jupiter.api.Test;

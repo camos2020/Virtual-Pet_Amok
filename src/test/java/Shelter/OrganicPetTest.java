@@ -1,3 +1,5 @@
+package Shelter;
+
 import Shelter.OrganicCat;
 import Shelter.OrganicDog;
 import Shelter.OrganicPet;

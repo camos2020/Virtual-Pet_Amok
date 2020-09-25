@@ -1,13 +1,10 @@
-package VP_amokTest;
-
-import VP_amok.OrganicCat;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.Assert.assertEquals;
 
 public class OrganicCatTest {
 
-    OrganicCat underTest = new OrganicCat("Kitty", "Relaxed", 100, 100, 100, 20, 100,100);
+    OrganicPet underTest = new VP_amok.OrganicPet("Kitty", "Relaxed", 100, 100, 100, 20, 100,100, 20);
 
     @Test
     public  void  shouldDecreaseHungerBy20WhenFed()  {
@@ -28,23 +25,34 @@ public class OrganicCatTest {
         int currentBoredom = underTest.getBoredom();
         assertEquals(currentBoredom, 80);
     }
+
     @Test
-    public  void  shouldIncreaseLitterBoxCleanlinessBy20WhenLitterBoxCleaned() {
+    public  void  shouldDecreaceLitterBoxLevelBy50WhenCleaned() {
         underTest.emptyLitterBox();
         int currentLitterBox = underTest.getLitterBox();
-        assertEquals(currentLitterBox, 40);
+        assertEquals(currentLitterBox, 50);
     }
+
     @Test
     public  void  shouldIncreaseWellnessBy20WhenVisitsVet() {
         underTest.takePetToVet();
         int currentWellness = underTest.getWellness();
         assertEquals(currentWellness, 40);
     }
+
     @Test
-    public  void  shouldIncreaseHappyPurBy20WhenCatGetsPetted() {
+    public  void  shouldDecreaseNeedForPettingBy20WhenCatGetsARub() {
         underTest.catPetting();
         int currentNeedsToBePetted = underTest.getNeedsToBePetted();
-        assertEquals(currentNeedsToBePetted, 100);
+        assertEquals(currentNeedsToBePetted, 80);
+    }
+
+    @Test
+    public  void  shouldIncreaseHappinessBy20WithPositiveInteraction() {
+        OrganicPet underTest = new OrganicDog("Taz", "Hyper", 100, 100, 100, 20, 20, 20, 20);
+        underTest.makePetHappy();
+        int currentHappiness = underTest.getHappiness();
+        assertEquals(currentHappiness, 40);
     }
 
 }

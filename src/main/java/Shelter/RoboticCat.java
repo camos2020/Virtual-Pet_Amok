@@ -28,8 +28,8 @@ public class RoboticCat extends RoboticPet {
 
 
     //Constructor- any changes to characteristics have to be done here.
-    public RoboticCat(String name, String description, int boredomLevel, int oilLevel, int maintenanceLevel, int happinessLevel) {
-        super(name, description, boredomLevel, oilLevel, maintenanceLevel);
+    public RoboticCat(String PetName, String description, int boredomLevel, int oilLevel, int maintenanceLevel, int happinessLevel) {
+        super(PetName, description, boredomLevel, oilLevel, maintenanceLevel);
         this.boredomLevel = boredomLevel;
         this.oilLevel = oilLevel;
         this.maintenanceLevel = maintenanceLevel;

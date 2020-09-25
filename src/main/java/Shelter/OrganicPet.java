@@ -42,7 +42,7 @@ public abstract class OrganicPet extends VirtualPet {
     }
 
     public int getHappiness() { return happinessLevel; }
-    //    public String getName() {return petName; }
+    //    public String getPetName() {return petName; }
     //    public String getDescription() {  return description;}
 
 

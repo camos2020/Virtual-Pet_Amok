@@ -7,8 +7,8 @@ public abstract class RoboticPet extends VirtualPet {
 //    protected String petName;
 //    protected String description;
 
-    public RoboticPet(String name, String description, int boredomLevel, int oilLevel, int maintenanceLevel) {
-        super(name, description);
+    public RoboticPet(String petName, String description, int boredomLevel, int oilLevel, int maintenanceLevel) {
+        super(petName, description);
         this.boredomLevel = boredomLevel;
         this.oilLevel = oilLevel;
         this.maintenanceLevel = maintenanceLevel;
@@ -21,7 +21,7 @@ public abstract class RoboticPet extends VirtualPet {
         return oilLevel;
     }
     public int getMaintenance() { return maintenanceLevel;}
-//    public String getName() {return petName; }
+//    public String getpetName() {return petName; }
 //    public String getDescription() {  return description;}
 
     public void fixPet() {

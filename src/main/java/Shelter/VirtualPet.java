@@ -13,12 +13,10 @@ public abstract class VirtualPet {
 
     }
 
-    public String getName() {
+    public String getPetName() {
         return petName;
     }
-    public String getDescription() {
-        return description;
-    }
+    public String getDescription() { return description; }
 }
 
 

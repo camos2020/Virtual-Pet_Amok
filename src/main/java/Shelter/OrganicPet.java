@@ -46,12 +46,14 @@ public abstract class OrganicPet extends VirtualPet {
     //    public String getDescription() {  return description;}
 
 
+
     public void feedPet() {
         hungerLevel -= 20;
     }
     public void PlayWithPet() {
         boredomLevel -= 20;
     }
+
     public void waterPet() {
         thirstLevel -= 20;
     }

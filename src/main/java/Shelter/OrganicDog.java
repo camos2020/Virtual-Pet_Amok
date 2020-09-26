@@ -1,28 +1,35 @@
 package Shelter;
 
-public class OrganicDog extends OrganicPet {
+public class OrganicDog extends OrganicPet implements WalkDog {
 
     private int cleanCageLevel;
     private int needsWalkLevel;
+    //private int orgDogId =0;
+
 
     //Constructor- any changes to characteristics have to be done here.
     public OrganicDog(String petName, String description, int hungerLevel, int thirstLevel, int boredomLevel, int wellnessLevel, int cleanCageLevel, int needsWalkLevel, int happinessLevel) {
         super(petName, description, hungerLevel, thirstLevel, boredomLevel, wellnessLevel, happinessLevel);
         this.cleanCageLevel = cleanCageLevel;
         this.needsWalkLevel = needsWalkLevel;
+        //orgDogId++;
     }
 
     public OrganicDog() {
-        super();
+        cleanCageLevel = 20;
+        needsWalkLevel = 100;
+        //orgDogId ++;
     }
-
-    public int getCleanCageLevel() {
+            public int getCleanCageLevel() {
         return cleanCageLevel;
     }
 
     public int getNeedsWalkLevel() {
         return needsWalkLevel;
     }
+//    public int getOrgDogId(){
+//        return orgDogId;
+//    }
     //public int makeDogHappy() {
         //return happinessLevel;
     //}
@@ -34,7 +41,8 @@ public class OrganicDog extends OrganicPet {
             //return cleanCageLevel;}
 
      
-        public void walkTheDog () { 
+        @Override
+        public void walkTheDog() {
             needsWalkLevel -= 20;
         }
         public void cleanCage () {
@@ -45,20 +53,19 @@ public class OrganicDog extends OrganicPet {
         }
 
 
+
+
 //    public void walkTheDog() {
 //    }
 
     public int getNeedsWalk() {
         return needsWalkLevel;
     }
-
-//    public void cleanCage() {
-//    }
-
     public int getCageClean() {
         return cleanCageLevel;
     }
     public int getHappiness() {
         return  happinessLevel;
     }
+
 }

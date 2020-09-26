@@ -1,12 +1,15 @@
 package Shelter;
 import Shelter.RoboticPet;
 
-public class RoboticDog  extends RoboticPet {
+public class RoboticDog  extends RoboticPet implements WalkDog {
 
     public int boredomLevel;
     private int oilLevel;
     private int maintenanceLevel;
     private int happinessLevel;//Various activities
+    private int needsWalkLevel;
+
+
     //    protected String petName;
     //    protected String description;
     //    private int ownerResponse = 0;
@@ -34,9 +37,19 @@ public class RoboticDog  extends RoboticPet {
         this.oilLevel = oilLevel;
         this.maintenanceLevel = maintenanceLevel;
         this.happinessLevel = happinessLevel;
+        this.needsWalkLevel = needsWalkLevel;
     }
 
+    public int getNeedsWalkLevel() {
+        return needsWalkLevel;
+    }
+
+    public void walkTheDog() {
+        needsWalkLevel -= 20;
+    }
 }
+
+
 
 //        public void playWithPetByRemote() {
 //            boredomLevel-= 20;

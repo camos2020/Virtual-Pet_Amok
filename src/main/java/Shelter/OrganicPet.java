@@ -10,7 +10,15 @@ public abstract class OrganicPet extends VirtualPet {
 //    protected String description;
 //    private int ownerResponse = 0;
 
-    public OrganicPet(String petName, String description, int hungerLevel, int thirstLevel, int boredomLevel, int wellnessLevel, int happinessLevel) {
+    public void tick() {
+        hungerLevel += 1;
+        wellnessLevel -= 1;
+        thirstLevel += 1;
+        boredomLevel += 1;
+
+    }
+
+        public OrganicPet(String petName, String description, int hungerLevel, int thirstLevel, int boredomLevel, int wellnessLevel, int happinessLevel) {
         super(petName, description);
         this.hungerLevel = hungerLevel;
         this.thirstLevel = thirstLevel;

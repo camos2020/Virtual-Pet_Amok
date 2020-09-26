@@ -17,6 +17,8 @@ public abstract class VirtualPet {
         return petName;
     }
     public String getDescription() { return description; }
+
+
 }
 
 
